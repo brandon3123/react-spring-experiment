@@ -10,4 +10,9 @@ public class HomeController {
     public String index() {
         return "index";
     }
+
+    @RequestMapping ("/docs")
+    public String home() {
+        return "redirect:/swagger-ui/";
+    }
 }

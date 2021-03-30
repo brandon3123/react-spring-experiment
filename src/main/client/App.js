@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UserTable from "./components/user/UserTable";
-import FetchAllUsers from "./api/user/UserRoutes";
 import AllUsersTable from "./components/user/AllUsersTable";
+import UserByIdTable from "./components/user/UserByIdTable";
 
 class App extends React.Component {
 
     render() {
         return (
-            <AllUsersTable />
-
+            <div>
+                <AllUsersTable />
+                <UserByIdTable id={"2"} />
+            </div>
         )
     }
 }

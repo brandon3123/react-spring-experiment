@@ -17,8 +17,10 @@ public class SampleUserDataLoader implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
-        User user = new User("Clark", "Kent", "Superman@hotmail.com");
-        userRepository.save(user);
+    public void run(String... args) {
+        User superMan = new User("Clark", "Kent", "Superman@hotmail.com");
+        User spiderMan = new User("Peter", "Parker", "Spiderman@hotmail.com");
+        userRepository.save(superMan);
+        userRepository.save(spiderMan);
     }
 }
